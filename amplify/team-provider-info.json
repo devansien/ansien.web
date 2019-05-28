@@ -1,0 +1,14 @@
+{
+    "web": {
+        "awscloudformation": {
+            "AuthRoleName": "ansienwebsite-web-20190514011453-authRole",
+            "UnauthRoleArn": "arn:aws:iam::707303343074:role/ansienwebsite-web-20190514011453-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::707303343074:role/ansienwebsite-web-20190514011453-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "ansienwebsite-web-20190514011453-deployment",
+            "UnauthRoleName": "ansienwebsite-web-20190514011453-unauthRole",
+            "StackName": "ansienwebsite-web-20190514011453",
+            "StackId": "arn:aws:cloudformation:us-east-1:707303343074:stack/ansienwebsite-web-20190514011453/191d6aa0-7581-11e9-af4b-0a6fb8e9c8ee"
+        }
+    }
+}
