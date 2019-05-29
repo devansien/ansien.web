@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-
-// Import components
 import Loading from './Loading';
 import PropTypes from 'prop-types';
-
-
-//Import styling
 import '../styles/Widget.css';
 
 class Widget extends Component {
@@ -14,6 +9,7 @@ class Widget extends Component {
 
         // Create inline styles to make grid elements span multiple rows/columns
         this.spanStyles = {};
+
         if (props.colspan !== 1) {
             this.spanStyles.gridColumn = `span ${props.colspan}`;
         }
