@@ -11,7 +11,7 @@ class ApiTest extends Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:63473/api/query")
+        fetch("http://localhost:63473/api/query/12")
             .then(res => res.json())
             .then(
                 (result) => {
