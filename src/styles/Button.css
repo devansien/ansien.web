@@ -1,17 +1,18 @@
-.Widget {
-    background-color: #34495e;
+.Button {
     padding: 1rem;
+    background-color: #5046db;
 }
 
 /* autoprefixer: off */
 @supports(display:grid) {
-    .Widget {
+    .Button {
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto 1fr;
         grid-template-areas: 
             "header"
             "content";
+            max-height: 3.5rem;
     }
 
     .App > * + * {
@@ -19,31 +20,31 @@
     }
 }
 
-.Widget .header {
+.Button .header {
     grid-area: header;
     line-height: 2;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.Widget h2 {
-    font-size: 1.1rem;
+.Button h2 {
+    font-size: 1.5rem;
     margin: 0;
     line-height: 1;
     text-overflow: ellipsis;
 }
 
-.Widget .Loading {
+.Button .Loading {
     margin-left: 0.5rem;
 }
 
-.Widget .content {
+.Button .content {
     grid-area: content;
     padding-top: 1rem;
 }
 
 @media(max-width: 600px) {
-    .Widget .content {
+    .Button .content {
         padding-top: 0.25rem;
     }
 }

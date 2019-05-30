@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import Loading from './Loading';
 import PropTypes from 'prop-types';
+import Loading from './Loading';
 import '../styles/Widget.css';
 
 class Widget extends Component {
     constructor(props) {
         super(props);
 
-        // Create inline styles to make grid elements span multiple rows/columns
         this.spanStyles = {};
-
         if (props.colspan !== 1) {
             this.spanStyles.gridColumn = `span ${props.colspan}`;
         }
@@ -36,19 +34,17 @@ class Widget extends Component {
     }
 }
 
-// Provide default settings for when they aren't supplied
 Widget.defaultProps = {
     heading: "Unnamed Widget",
     colspan: 1,
     rowspan: 1
 }
 
-// Enforce the type of props to send to this component
 Widget.propTypes = {
     heading: PropTypes.string,
     colspan: PropTypes.number,
     rowspan: PropTypes.number,
-    children: PropTypes.element.isRequired
+    children: PropTypes.string
 }
 
 export default Widget;

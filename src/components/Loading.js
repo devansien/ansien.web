@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-
-// Import styling
 import '../styles/Loading.css';
 
 class Loading extends Component {
     render() {
         return (
-            // Display a simple SVG image 
             <svg className="Loading" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 42" version="1.1" y="0px" x="0px" enableBackground="new 0 0 42 42">
                 <rect height="10" width="7" y=".5" x="17.5" />
                 <rect height="10" width="7" y="31.5" x="17.5" />
